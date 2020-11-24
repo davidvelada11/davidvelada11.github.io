@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>David Propiedades de texto CSS</title>
+        <style>
+            #generic{
+                font-family: monospace;
+            }
+            #specific{
+                font-family: Helvetica, sans-serif;
+            }
+            #pixeles{
+                font-size: 19px;
+            }
+            #em{
+                font-size: 0.75em;
+            }
+            #negrita{
+                font-weight: bold;
+            }
+            #cursiva{
+                font-style: italic;
+            }
+            #interlineado{
+                line-height: 2em;
+            }
+            #centro{
+                text-align: center;
+            }
+            #subrayar{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Propiedades del texto</h1>
+        <h2>Font family</h2>
+        <p>Esta propiedad se utiliza para cambiar el tipo de fuente mediante la etiqueta font-family.Hay dos tipos de font family:</p>
+        <h3>Generic font family</h3>
+        <p>Son aquellos tipos de fuente que tienen todos los navegadores, aunque pueden verse distintas si se ven desde diferentes ordenadores.<br>
+        Algunos ejemplos de generic font family son: sans-serif, serif o monospace, que se utiliza en el siguiente ejemplo:</p>
+        <p id="generic">Monospace</p>
+        <h3>Specific font family</h3>  
+        <p>Para solucionar el problema de que con generic font family el tipo de fuente puede ser distinto, se utiliza specific font family,<br>
+            ya que son iguales en cualquier ordenador, pero no están presentes en todos ellos, por lo que se suele añadir una fuente genérica<br>
+            para que se active esa en ese caso. Un ejemplo es Helvetica:</p>  
+            <p id="specific">Helvetica</p>
+        <h2>Font size</h2>
+        <p>Se utiliza para cambiar el tamaño de la fuente. Se hace a través de la etiqueta font-size y se puede escribir:</p>
+            <p id="pixeles">mediante un número de pixeles</p>
+            <p id="em">mediante una relación de proporcionalidad con los encabezados a través de la unidad relativa em</p>
+        <h2>Font weight</h2> 
+        <p id="negrita">La etiqueta font-weight: bold se utiliza para poner en negrita todo el párrafo sin abusar de la etiqueta strong</p> 
+        <h2>Font style</h2>  
+        <p id="cursiva">La etiqueta font-style:italic se utiliza para poner en cursiva todo el párrafo sin abusar de la etiqueta em.</p>
+        <h2>Line height</h2>
+        <p id="interlineado">La etiqueta line-height se utiliza para cambiar el tamaño de interlineado.<br>
+            Al igual que el tamaño de la fuente, se puede escribir <br>
+             mediante pixeles o em si queremos que vaya proporcional <br>
+             al tamaño de la fuente de los párrafos</p>
+        <h2>Text-align</h2>
+        <p id="centro">La etiqueta text-align permite situar la parte del texto seleccionada en el centro, izquierda o derecha de la línea.</p>
+        <h2>Text decoration</h2>
+        <p id="subrayar">La etiqueta text-decoration sirve para decorar el texto. Entre otras cosas permite subrayar o directamente declarar que no queremos decoración del texto añadiendo none.</p>
+    </body>
+</html>
+
+
